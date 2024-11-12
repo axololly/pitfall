@@ -1,0 +1,252 @@
+[Engine] [16:34:27.546463] <  4> Random <--- uci
+[Engine] [16:34:27.558305] <  6> Random <--- uci
+[Engine] [16:34:27.571542] <  3> Pitfall <--- uci
+[Engine] [16:34:27.571719] <  5> Pitfall <--- uci
+[Engine] [16:34:29.506580] <  5> Pitfall ---> id name Pitfall
+[Engine] [16:34:29.506723] <  5> Pitfall ---> id author axololly
+[Engine] [16:34:29.506795] <  5> Pitfall ---> uciok
+[Engine] [16:34:29.512808] <  5> Random <--- uci
+[Engine] [16:34:29.538950] <  6> Random ---> id name Random
+[Engine] [16:34:29.539088] <  6> Random ---> id author axololly
+[Engine] [16:34:29.539156] <  6> Random ---> uciok
+[Engine] [16:34:29.551366] <  6> Pitfall <--- uci
+[Engine] [16:34:29.610117] <  4> Random ---> id name Random
+[Engine] [16:34:29.610252] <  4> Random ---> id author axololly
+[Engine] [16:34:29.610331] <  4> Random ---> uciok
+[Engine] [16:34:29.621487] <  4> Pitfall <--- uci
+[Engine] [16:34:29.679341] <  3> Pitfall ---> id name Pitfall
+[Engine] [16:34:29.679486] <  3> Pitfall ---> id author axololly
+[Engine] [16:34:29.679550] <  3> Pitfall ---> uciok
+[Engine] [16:34:29.687725] <  3> Random <--- uci
+[Engine] [16:34:31.490653] <  6> Pitfall ---> id name Pitfall
+[Engine] [16:34:31.490774] <  6> Pitfall ---> id author axololly
+[Engine] [16:34:31.490833] <  6> Pitfall ---> uciok
+[Engine] [16:34:31.491044] <  6> Random <--- ucinewgame
+[Engine] [16:34:31.491122] <  6> Random <--- isready
+[Engine] [16:34:31.505750] <  5> Random ---> id name Random
+[Engine] [16:34:31.505908] <  5> Random ---> id author axololly
+[Engine] [16:34:31.505971] <  5> Random ---> uciok
+[Engine] [16:34:31.506173] <  5> Pitfall <--- ucinewgame
+[Engine] [16:34:31.506284] <  5> Pitfall <--- isready
+[Engine] [16:34:31.546503] <  6> Random ---> readyok
+[Engine] [16:34:31.568613] <  5> Pitfall ---> readyok
+[Engine] [16:34:31.568890] <  6> Random <--- ucinewgame
+[Engine] [16:34:31.568985] <  6> Random <--- isready
+[Engine] [16:34:31.586438] <  5> Pitfall <--- ucinewgame
+[Engine] [16:34:31.586570] <  5> Pitfall <--- isready
+[Engine] [16:34:31.600629] <  6> Random ---> readyok
+[Engine] [16:34:31.607305] <  5> Pitfall ---> readyok
+[Engine] [16:34:31.607561] <  6> Pitfall <--- ucinewgame
+[Engine] [16:34:31.607654] <  6> Pitfall <--- isready
+[Engine] [16:34:31.644145] <  5> Random <--- ucinewgame
+[Engine] [16:34:31.644280] <  5> Random <--- isready
+[Engine] [16:34:31.646737] <  6> Pitfall ---> readyok
+[Engine] [16:34:31.661386] <  3> Random ---> id name Random
+[Engine] [16:34:31.661556] <  3> Random ---> id author axololly
+[Engine] [16:34:31.661809] <  3> Random ---> uciok
+[Engine] [16:34:31.672079] <  3> Pitfall <--- ucinewgame
+[Engine] [16:34:31.672210] <  3> Pitfall <--- isready
+[Engine] [16:34:31.672998] <  5> Random ---> readyok
+[Engine] [16:34:31.679197] <  6> Pitfall <--- ucinewgame
+[Engine] [16:34:31.679309] <  6> Pitfall <--- isready
+[Engine] [16:34:31.687251] <  3> Pitfall ---> readyok
+[Engine] [16:34:31.687279] <  5> Random <--- ucinewgame
+[Engine] [16:34:31.687418] <  5> Random <--- isready
+[Engine] [16:34:31.689003] <  4> Pitfall ---> id name Pitfall
+[Engine] [16:34:31.689138] <  4> Pitfall ---> id author axololly
+[Engine] [16:34:31.689388] <  4> Pitfall ---> uciok
+[Engine] [16:34:31.689598] <  6> Pitfall ---> readyok
+[Engine] [16:34:31.689679] <  4> Random <--- ucinewgame
+[Engine] [16:34:31.689772] <  4> Random <--- isready
+[Engine] [16:34:31.692368] <  3> Pitfall <--- ucinewgame
+[Engine] [16:34:31.692402] <  6> Random <--- isready
+[Engine] [16:34:31.692473] <  3> Pitfall <--- isready
+[Engine] [16:34:31.692460] <  5> Random ---> readyok
+[Engine] [16:34:31.692773] <  4> Random ---> readyok
+[Engine] [16:34:31.693077] <  6> Random ---> readyok
+[Engine] [16:34:31.693247] <  3> Pitfall ---> readyok
+[Engine] [16:34:31.693335] <  4> Random <--- ucinewgame
+[Engine] [16:34:31.693341] <  5> Pitfall <--- isready
+[Engine] [16:34:31.693425] <  4> Random <--- isready
+[Engine] [16:34:31.693685] <  6> Random <--- position startpos moves d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6 d1a4 a6b7 f1g2 c7c5 d4c5 f8c5 e1g1 c5e7
+[Engine] [16:34:31.693876] <  6> Random <--- isready
+[Engine] [16:34:31.707514] <  3> Random <--- ucinewgame
+[Engine] [16:34:31.707635] <  3> Random <--- isready
+[Engine] [16:34:31.727176] <  5> Pitfall ---> readyok
+[Engine] [16:34:31.737980] <  4> Random ---> readyok
+[Engine] [16:34:31.738189] <  6> Random ---> readyok
+[Engine] [16:34:31.738440] <  3> Random ---> readyok
+[Engine] [16:34:31.738551] <  5> Pitfall <--- position startpos moves d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6 d1a4 a6b7 f1g2 c7c5 d4c5 f8c5 e1g1 c5e7
+[Engine] [16:34:31.738560] <  4> Pitfall <--- ucinewgame
+[Engine] [16:34:31.738650] <  5> Pitfall <--- isready
+[Engine] [16:34:31.738678] <  4> Pitfall <--- isready
+[Engine] [16:34:31.747173] <  6> Random <--- go wtime 8800 btime 8800 winc 800 binc 800
+[Engine] [16:34:31.755348] <  3> Random <--- ucinewgame
+[Engine] [16:34:31.755459] <  3> Random <--- isready
+[Engine] [16:34:31.769173] <  4> Pitfall ---> readyok
+[Engine] [16:34:31.770361] <  6> Random ---> bestmove h2h4
+[Engine] [16:34:31.784417] <  5> Pitfall ---> readyok
+[Engine] [16:34:31.784735] <  3> Random ---> readyok
+[Engine] [16:34:31.784845] <  4> Pitfall <--- ucinewgame
+[Engine] [16:34:31.784857] <  5> Pitfall <--- go wtime 8800 btime 8800 winc 800 binc 800
+[Engine] [16:34:31.784958] <  4> Pitfall <--- isready
+[Engine] [16:34:31.804327] <  3> Pitfall <--- isready
+[Engine] [16:34:31.807170] <  6> Random <--- isready
+[Engine] [16:34:31.844211] <  4> Pitfall ---> readyok
+[Engine] [16:34:31.853301] <  3> Pitfall ---> readyok
+[Engine] [16:34:31.853504] <  6> Random ---> readyok
+[Engine] [16:34:31.853730] <  4> Random <--- isready
+[Engine] [16:34:31.856414] <  3> Pitfall <--- position startpos moves g1f3 d7d5 g2g3 c7c6 f1g2 g8f6 d2d3 c8g4 h2h3 g4h5 b2b3 e7e6 c1b2 d8a5 d1d2 a5d2
+[Engine] [16:34:31.856503] <  3> Pitfall <--- isready
+[Engine] [16:34:31.920070] <  4> Random ---> readyok
+[Engine] [16:34:31.923044] <  3> Pitfall ---> readyok
+[Engine] [16:34:31.923340] <  4> Random <--- position startpos moves g1f3 d7d5 g2g3 c7c6 f1g2 g8f6 d2d3 c8g4 h2h3 g4h5 b2b3 e7e6 c1b2 d8a5 d1d2 a5d2
+[Engine] [16:34:31.923433] <  4> Random <--- isready
+[Engine] [16:34:31.963657] <  3> Pitfall <--- go wtime 8800 btime 8800 winc 800 binc 800
+[Engine] [16:34:32.037032] <  4> Random ---> readyok
+[Engine] [16:34:32.107810] <  4> Random <--- go wtime 8800 btime 8800 winc 800 binc 800
+[WARN  ] [16:34:32.222846] <  6> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:34:32.223026] <  4> Random ---> bestmove e1f1
+[Engine] [16:34:32.275790] <  4> Random <--- isready
+[Engine] [16:34:32.330931] <  4> Random ---> readyok
+[WARN  ] [16:34:32.504214] <  6> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:34:32.504331] <  6> Pitfall <--- isready
+[Engine] [16:34:32.589937] <  6> Pitfall ---> readyok
+[Engine] [16:34:32.629825] <  6> Pitfall <--- position startpos moves d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6 d1a4 a6b7 f1g2 c7c5 d4c5 f8c5 e1g1 c5e7 h2h4
+[Engine] [16:34:32.644557] <  6> Pitfall <--- isready
+[WARN  ] [16:34:32.722104] <  4> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:34:32.724403] <  6> Pitfall ---> readyok
+[Engine] [16:34:32.786312] <  6> Pitfall <--- go wtime 9541 btime 8800 winc 800 binc 800
+[WARN  ] [16:34:33.089648] <  4> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:34:33.089785] <  4> Pitfall <--- isready
+[Engine] [16:34:33.201846] <  4> Pitfall ---> readyok
+[Engine] [16:34:33.287491] <  4> Pitfall <--- position startpos moves g1f3 d7d5 g2g3 c7c6 f1g2 g8f6 d2d3 c8g4 h2h3 g4h5 b2b3 e7e6 c1b2 d8a5 d1d2 a5d2 e1f1
+[Engine] [16:34:33.308181] <  4> Pitfall <--- isready
+[Engine] [16:34:33.427844] <  4> Pitfall ---> readyok
+[Engine] [16:34:33.525909] <  4> Pitfall <--- go wtime 9433 btime 8800 winc 800 binc 800
+[Engine] [16:35:41.735217] <  5> Random <--- uci
+[Engine] [16:35:41.742615] <  4> Pitfall <--- uci
+[Engine] [16:35:41.886922] <  3> Pitfall <--- uci
+[Engine] [16:35:41.939078] <  6> Random <--- uci
+[Engine] [16:35:43.687366] <  4> Pitfall ---> id name Pitfall
+[Engine] [16:35:43.687520] <  4> Pitfall ---> id author axololly
+[Engine] [16:35:43.687593] <  4> Pitfall ---> uciok
+[Engine] [16:35:43.693925] <  4> Random <--- uci
+[Engine] [16:35:43.751444] <  5> Random ---> id name Random
+[Engine] [16:35:43.751575] <  5> Random ---> id author axololly
+[Engine] [16:35:43.751635] <  5> Random ---> uciok
+[Engine] [16:35:43.787629] <  5> Pitfall <--- uci
+[Engine] [16:35:43.925330] <  3> Pitfall ---> id name Pitfall
+[Engine] [16:35:43.925531] <  3> Pitfall ---> id author axololly
+[Engine] [16:35:43.925833] <  3> Pitfall ---> uciok
+[Engine] [16:35:43.931609] <  3> Random <--- uci
+[Engine] [16:35:44.031162] <  6> Random ---> id name Random
+[Engine] [16:35:44.031301] <  6> Random ---> id author axololly
+[Engine] [16:35:44.031376] <  6> Random ---> uciok
+[Engine] [16:35:44.040709] <  6> Pitfall <--- uci
+[Engine] [16:35:45.710483] <  4> Random ---> id name Random
+[Engine] [16:35:45.710657] <  4> Random ---> id author axololly
+[Engine] [16:35:45.710921] <  4> Random ---> uciok
+[Engine] [16:35:45.711137] <  4> Pitfall <--- ucinewgame
+[Engine] [16:35:45.711216] <  4> Pitfall <--- isready
+[Engine] [16:35:45.795389] <  4> Pitfall ---> readyok
+[Engine] [16:35:45.811336] <  5> Pitfall ---> id name Pitfall
+[Engine] [16:35:45.811498] <  5> Pitfall ---> id author axololly
+[Engine] [16:35:45.811765] <  5> Pitfall ---> uciok
+[Engine] [16:35:45.811975] <  5> Random <--- ucinewgame
+[Engine] [16:35:45.812055] <  5> Random <--- isready
+[Engine] [16:35:45.849588] <  4> Pitfall <--- ucinewgame
+[Engine] [16:35:45.849724] <  4> Pitfall <--- isready
+[Engine] [16:35:45.879710] <  5> Random ---> readyok
+[Engine] [16:35:45.896071] <  3> Random ---> id name Random
+[Engine] [16:35:45.896210] <  3> Random ---> id author axololly
+[Engine] [16:35:45.896294] <  3> Random ---> uciok
+[Engine] [16:35:45.896504] <  4> Pitfall ---> readyok
+[Engine] [16:35:45.896591] <  3> Pitfall <--- ucinewgame
+[Engine] [16:35:45.896686] <  3> Pitfall <--- isready
+[Engine] [16:35:45.897642] <  5> Random <--- ucinewgame
+[Engine] [16:35:45.897731] <  5> Random <--- isready
+[Engine] [16:35:45.935363] <  4> Random <--- ucinewgame
+[Engine] [16:35:45.935502] <  4> Random <--- isready
+[Engine] [16:35:45.964658] <  3> Pitfall ---> readyok
+[Engine] [16:35:45.975405] <  5> Random ---> readyok
+[Engine] [16:35:45.975637] <  4> Random ---> readyok
+[Engine] [16:35:45.975851] <  3> Pitfall <--- ucinewgame
+[Engine] [16:35:45.975938] <  3> Pitfall <--- isready
+[Engine] [16:35:46.014193] <  5> Pitfall <--- ucinewgame
+[Engine] [16:35:46.014317] <  5> Pitfall <--- isready
+[Engine] [16:35:46.015056] <  4> Random <--- ucinewgame
+[Engine] [16:35:46.015327] <  4> Random <--- isready
+[Engine] [16:35:46.048431] <  3> Pitfall ---> readyok
+[Engine] [16:35:46.048498] <  5> Pitfall ---> readyok
+[Engine] [16:35:46.048636] <  4> Random ---> readyok
+[Engine] [16:35:46.052299] <  3> Random <--- ucinewgame
+[Engine] [16:35:46.052389] <  3> Random <--- isready
+[Engine] [16:35:46.053306] <  5> Pitfall <--- ucinewgame
+[Engine] [16:35:46.053411] <  5> Pitfall <--- isready
+[Engine] [16:35:46.053689] <  4> Pitfall <--- isready
+[Engine] [16:35:46.100253] <  3> Random ---> readyok
+[Engine] [16:35:46.115373] <  6> Pitfall ---> id name Pitfall
+[Engine] [16:35:46.115495] <  6> Pitfall ---> id author axololly
+[Engine] [16:35:46.115554] <  6> Pitfall ---> uciok
+[Engine] [16:35:46.115987] <  5> Pitfall ---> readyok
+[Engine] [16:35:46.116149] <  4> Pitfall ---> readyok
+[Engine] [16:35:46.116238] <  6> Random <--- ucinewgame
+[Engine] [16:35:46.116336] <  6> Random <--- isready
+[Engine] [16:35:46.117251] <  3> Random <--- ucinewgame
+[Engine] [16:35:46.117342] <  3> Random <--- isready
+[Engine] [16:35:46.136878] <  5> Random <--- isready
+[Engine] [16:35:46.136948] <  4> Pitfall <--- position startpos moves d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6 d1a4 a6b7 f1g2 c7c5 d4c5 f8c5 e1g1 c5e7
+[Engine] [16:35:46.137058] <  4> Pitfall <--- isready
+[Engine] [16:35:46.179194] <  6> Random ---> readyok
+[Engine] [16:35:46.194215] <  3> Random ---> readyok
+[Engine] [16:35:46.204187] <  5> Random ---> readyok
+[Engine] [16:35:46.216346] <  4> Pitfall ---> readyok
+[Engine] [16:35:46.216807] <  5> Random <--- position startpos moves g1f3 d7d5 g2g3 c7c6 f1g2 g8f6 d2d3 c8g4 h2h3 g4h5 b2b3 e7e6 c1b2 d8a5 d1d2 a5d2
+[Engine] [16:35:46.216901] <  5> Random <--- isready
+[Engine] [16:35:46.243601] <  3> Pitfall <--- isready
+[Engine] [16:35:46.243926] <  6> Random <--- ucinewgame
+[Engine] [16:35:46.244192] <  6> Random <--- isready
+[Engine] [16:35:46.244533] <  4> Pitfall <--- go wtime 8080 btime 8080 winc 80 binc 80
+[Engine] [16:35:46.312151] <  5> Random ---> readyok
+[Engine] [16:35:46.352710] <  3> Pitfall ---> readyok
+[Engine] [16:35:46.369069] <  6> Random ---> readyok
+[Engine] [16:35:46.369584] <  3> Pitfall <--- position startpos moves g1f3 d7d5 g2g3 c7c6 f1g2 g8f6 d2d3 c8g4 h2h3 g4h5 b2b3 e7e6 c1b2 d8a5 d1d2 a5d2
+[Engine] [16:35:46.369671] <  3> Pitfall <--- isready
+[Engine] [16:35:46.403450] <  5> Random <--- go wtime 8080 btime 8080 winc 80 binc 80
+[Engine] [16:35:46.413320] <  6> Pitfall <--- ucinewgame
+[Engine] [16:35:46.414171] <  6> Pitfall <--- isready
+[Engine] [16:35:46.447009] <  3> Pitfall ---> readyok
+[Engine] [16:35:46.454545] <  5> Random ---> bestmove b1d2
+[Engine] [16:35:46.479064] <  6> Pitfall ---> readyok
+[Engine] [16:35:46.479318] <  5> Random <--- isready
+[Engine] [16:35:46.492970] <  3> Pitfall <--- go wtime 8080 btime 8080 winc 80 binc 80
+[Engine] [16:35:46.494724] <  6> Pitfall <--- ucinewgame
+[Engine] [16:35:46.494825] <  6> Pitfall <--- isready
+[Engine] [16:35:46.574966] <  5> Random ---> readyok
+[Engine] [16:35:46.643175] <  6> Pitfall ---> readyok
+[Engine] [16:35:46.664111] <  6> Random <--- isready
+[Engine] [16:35:46.808840] <  6> Random ---> readyok
+[Engine] [16:35:46.867248] <  6> Random <--- position startpos moves d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6 d1a4 a6b7 f1g2 c7c5 d4c5 f8c5 e1g1 c5e7
+[Engine] [16:35:46.878389] <  6> Random <--- isready
+[WARN  ] [16:35:46.954695] <  5> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:35:46.954858] <  6> Random ---> readyok
+[Engine] [16:35:47.010791] <  6> Random <--- go wtime 8080 btime 8080 winc 80 binc 80
+[Engine] [16:35:47.094681] <  6> Random ---> bestmove g3g4
+[Engine] [16:35:47.108577] <  6> Random <--- isready
+[WARN  ] [16:35:47.220292] <  5> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:35:47.220423] <  5> Pitfall <--- isready
+[Engine] [16:35:47.220782] <  6> Random ---> readyok
+[Engine] [16:35:47.301766] <  5> Pitfall ---> readyok
+[Engine] [16:35:47.363876] <  5> Pitfall <--- position startpos moves g1f3 d7d5 g2g3 c7c6 f1g2 g8f6 d2d3 c8g4 h2h3 g4h5 b2b3 e7e6 c1b2 d8a5 d1d2 a5d2 b1d2
+[Engine] [16:35:47.391095] <  5> Pitfall <--- isready
+[Engine] [16:35:47.467912] <  5> Pitfall ---> readyok
+[Engine] [16:35:47.525838] <  5> Pitfall <--- go wtime 8086 btime 8080 winc 80 binc 80
+[WARN  ] [16:35:47.637592] <  6> fastchess --- Warning; Last info string with score not found from Random
+[WARN  ] [16:35:47.952384] <  6> fastchess --- Warning; Last info string with score not found from Random
+[Engine] [16:35:47.952518] <  6> Pitfall <--- isready
+[Engine] [16:35:48.053436] <  6> Pitfall ---> readyok
+[Engine] [16:35:48.117107] <  6> Pitfall <--- position startpos moves d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6 d1a4 a6b7 f1g2 c7c5 d4c5 f8c5 e1g1 c5e7 g3g4
+[Engine] [16:35:48.134020] <  6> Pitfall <--- isready
+[Engine] [16:35:48.252992] <  6> Pitfall ---> readyok
+[Engine] [16:35:48.329958] <  6> Pitfall <--- go wtime 8069 btime 8080 winc 80 binc 80

@@ -5,7 +5,7 @@ namespace Opponents.RandomMoves
     public struct RandomBot
     {
         public void Think(
-            ref SearchData data, int depth
+            ref SearchData data
         )
         {
             Random rng = new();

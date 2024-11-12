@@ -21,9 +21,10 @@ namespace Opponents.Bot
     {
         const int Inf = 999_999_999;
         Evaluation eval = new();
+        
         int countedNodes = 0;
-
         int checkEvery = 2048;
+        const int MAX_DEPTH = 255;
         
         public Stopwatch sw = new();
         public int timeLeft;
@@ -58,6 +59,20 @@ namespace Opponents.Bot
         }
 
         public int Think(
+            ref SearchData data
+        )
+        {
+            int bestScore = -Inf;
+
+            for (int localDepth = 1; localDepth < MAX_DEPTH + 1; localDepth++)
+            {
+                bestScore = Math.Max(bestScore, Search(ref data, localDepth));
+            }
+
+            return bestScore;
+        }
+
+        int Search(
             ref SearchData data,
             int depth,
             int ply = 0,
@@ -67,7 +82,12 @@ namespace Opponents.Bot
         {
             if (stopped) return 0;
 
-            if (countedNodes++ % checkEvery == 0) timeLeft -= (int)sw.ElapsedMilliseconds / 1000;
+            if (countedNodes++ % checkEvery == 0)
+            {
+                timeLeft -= (int)sw.ElapsedMilliseconds / 1000;
+
+                if (sw.ElapsedMilliseconds > timeLeft) return 0;
+            }
 
             if (depth == 0) return eval.Eval(data.pos);
             if (data.pos.IsDraw) return 0;
@@ -89,7 +109,7 @@ namespace Opponents.Bot
             foreach (Move move in moves)
             {
                 data.pos.MakeMove(move);
-                int score = -Think(ref data, depth - 1, ply + 1, -beta, -alpha);
+                int score = -Search(ref data, depth - 1, ply + 1, -beta, -alpha);
                 data.pos.UndoMove();
 
                 // Debug

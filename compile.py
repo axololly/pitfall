@@ -1,30 +1,21 @@
 from subprocess import run
 from os import remove as delete
 from glob import glob
-from shutil import rmtree
-import re
+from shutil import copyfile, rmtree
 
 # Name the file
 name = "random"
 
-with open("pitfall.csproj", "r") as f:
-    c = f.read()
-
-new_c = c.replace(
-    re.findall(
-        r"<AssemblyName>.+<\/AssemblyName>",
-        c
-    )[0],
-    f"<AssemblyName>{name}</AssemblyName>"
-)
-
-with open("pitfall.csproj", "w") as f:
-    f.write(new_c)
-
 # Publish the .exe
-command = "dotnet publish -c release --sc /p:PublishSingleFile=true /p:PublishTrimmed=true -o \"./Oppoents/" # sprt/\""
+command = f"dotnet publish -c release --sc /p:PublishSingleFile=true /p:AssemblyName={name} /p:PublishTrimmed=true"
 
 run(command)
+
+bin_name = name + ".exe"
+pub_file = "./bin/release/net8.0/win-x64/publish/" + bin_name
+out_path = "./sprt/" + bin_name
+
+copyfile(pub_file, out_path)
 
 # Delete all the generated DLLs
 for p in glob("./bin/release/net8.0/win-x64/*.dll"):
@@ -35,10 +26,7 @@ for p in glob("./bin/release/net8.0/win-x64/*.json"):
     delete(p)
 
 # Delete the remaining files
-try:
-    rmtree("./bin/release/net8.0/win-x64/publish")
-except:
-    pass
+rmtree("./bin/release/net8.0/win-x64/publish")
 
 try:
     delete(f"./sprt/{name}.pdb")
