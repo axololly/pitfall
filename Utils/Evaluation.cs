@@ -216,7 +216,7 @@ namespace Utils.Evaluation
             }
         }
 
-        public int Eval(Board board)
+        public int Eval(ref Board board)
         {
             int[] mg = new int[2];
             int[] eg = new int[2];

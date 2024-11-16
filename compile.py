@@ -7,7 +7,7 @@ from shutil import copyfile, rmtree
 name = "random"
 
 # Publish the .exe
-command = f"dotnet publish -c release --sc /p:PublishSingleFile=true /p:AssemblyName={name} /p:PublishTrimmed=true"
+command = f"dotnet publish -c release pitfall.csproj --sc /p:PublishSingleFile=true /p:AssemblyName=\"{name}\" /p:PublishTrimmed=true"
 
 run(command)
 

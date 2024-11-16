@@ -22,7 +22,8 @@ namespace Opponents.Bot
         const int Inf = 999_999_999;
         Evaluation eval = new();
         
-        int countedNodes = 0;
+        public int countedNodes = 0;
+        public int maxDepthReached = 0;
         int checkEvery = 2048;
         const int MAX_DEPTH = 255;
         
@@ -62,10 +63,17 @@ namespace Opponents.Bot
             ref SearchData data
         )
         {
+            stopped = false;
+            maxDepthReached = 0;
+            
             int bestScore = -Inf;
 
             for (int localDepth = 1; localDepth < MAX_DEPTH + 1; localDepth++)
             {
+                if (stopped) break;
+
+                maxDepthReached++;
+
                 bestScore = Math.Max(bestScore, Search(ref data, localDepth));
             }
 
@@ -84,12 +92,20 @@ namespace Opponents.Bot
 
             if (countedNodes++ % checkEvery == 0)
             {
-                timeLeft -= (int)sw.ElapsedMilliseconds / 1000;
+                timeLeft -= (int)sw.ElapsedMilliseconds;
 
-                if (sw.ElapsedMilliseconds > timeLeft) return 0;
+                if (timeLeft < 0)
+                {
+                    stopped = true;
+                    sw.Stop();
+                    return 0;
+                }
             }
 
-            if (depth == 0) return eval.Eval(data.pos);
+            // Search all captures after we reach the end of the search.
+            // if (depth == 0) return -QSearch(ref data.pos, -beta, -alpha);
+            if (depth == 0) return eval.Eval(ref data.pos);
+
             if (data.pos.IsDraw) return 0;
 
             List<Move> moves = data.pos.GenerateLegalMoves();
@@ -112,9 +128,6 @@ namespace Opponents.Bot
                 int score = -Search(ref data, depth - 1, ply + 1, -beta, -alpha);
                 data.pos.UndoMove();
 
-                // Debug
-                // if (ply == 1) Console.WriteLine($"{move} - {score}");
-
                 if (score > bestScore)
                 {
                     bestScore = score;
@@ -132,6 +145,32 @@ namespace Opponents.Bot
             if (ply == 0) data.bestMoveRoot = bestMove;
 
             return bestScore;
+        }
+
+        // Search all captures using quiescence search,
+        // otherwise called QSearch
+        int QSearch(ref Board board, int alpha, int beta)
+        {
+            int staticEval = eval.Eval(ref board);
+
+            if (staticEval >= beta) return beta;
+            if (staticEval < alpha) alpha = staticEval;
+
+            List<Move> moves = board.GenerateLegalMoves(onlyCaptures: true);
+
+            foreach (Move move in moves)
+            {
+                board.MakeMove(move);
+
+                int score = -QSearch(ref board, -beta, -alpha);
+
+                board.UndoMove();
+
+                if (score >= beta) return beta;
+                if (score < alpha) alpha = score;
+            }
+
+            return alpha;
         }
     }
 }

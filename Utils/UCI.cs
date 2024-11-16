@@ -3,7 +3,7 @@ using Opponents.RandomMoves;
 using Chess;
 
 Board board = new();
-RandomBot bot = new();
+Pitfall bot = new();
 
 while (true)
 {
@@ -35,6 +35,9 @@ while (true)
         case "position":
         {
             board = tokens[1] == "startpos" ? new() : new(string.Join(" ", tokens[2..8]));
+            
+            if (!tokens.Contains("moves")) break;
+            
             int whereToReadMoves = tokens[1] == "startpos" ? 3 : 10;
 
             // The 10th argument will be "moves", so skip this and
@@ -66,13 +69,16 @@ while (true)
             int remaining = board.SideToMove == 0 ? wTime : bTime;
             int inc = board.SideToMove == 0 ? wInc : bInc;
 
-            // bot.timeLeft = remaining / 20 + inc / 2;
+            bot.timeLeft = remaining / 20 + inc / 2;
 
-            // bot.sw.Reset();
-            // bot.sw.Start();
+            bot.sw.Reset();
+            bot.sw.Start();
 
-            bot.Think(ref data);
+            int bestScoreFromBot = bot.Think(ref data);
 
+            bot.sw.Stop();
+
+            Console.WriteLine($"info depth {bot.maxDepthReached} nodes {bot.countedNodes} score cp {bestScoreFromBot} pv {data.bestMoveRoot}");
             Console.WriteLine($"bestmove {data.bestMoveRoot}");
 
             break;

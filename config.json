@@ -48,14 +48,14 @@
     },
     "config_name": "",
     "output": 0,
-    "seed": 8673355719172379465,
+    "seed": 1209121665637721975,
     "variant": 0,
     "ratinginterval": 10,
     "scoreinterval": 1,
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 2,
+    "rounds": 5000,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -64,23 +64,23 @@
     "report_penta": true,
     "affinity": false,
     "log": {
-        "file": "sprt/log.txt",
+        "file": "",
         "level": 2,
         "compress": false,
         "realtime": true
     },
     "engines": [
         {
-            "name": "Pitfall",
+            "name": "Random 1",
             "dir": "",
-            "cmd": "sprt/pitfall.exe",
+            "cmd": "sprt/random.exe",
             "args": "",
             "options": [],
             "limit": {
                 "tc": {
-                    "increment": 100,
+                    "increment": 1000,
                     "fixed_time": 0,
-                    "time": 10000,
+                    "time": 3600000,
                     "moves": 0,
                     "timemargin": 0
                 },
@@ -90,16 +90,16 @@
             "variant": 0
         },
         {
-            "name": "Random",
+            "name": "Random 2",
             "dir": "",
             "cmd": "sprt/random.exe",
             "args": "",
             "options": [],
             "limit": {
                 "tc": {
-                    "increment": 100,
+                    "increment": 1000,
                     "fixed_time": 0,
-                    "time": 10000,
+                    "time": 3600000,
                     "moves": 0,
                     "timemargin": 0
                 },
@@ -110,27 +110,27 @@
         }
     ],
     "stats": {
-        "Random vs Pitfall": {
-            "wins": 0,
-            "losses": 0,
-            "draws": 0,
+        "Random 2 vs Random 1": {
+            "wins": 3,
+            "losses": 5,
+            "draws": 46,
             "penta_WW": 0,
-            "penta_WD": 0,
-            "penta_WL": 0,
-            "penta_DD": 0,
-            "penta_LD": 0,
+            "penta_WD": 2,
+            "penta_WL": 1,
+            "penta_DD": 20,
+            "penta_LD": 4,
             "penta_LL": 0
         },
-        "Pitfall vs Random": {
-            "wins": 0,
-            "losses": 4,
-            "draws": 0,
+        "Random 1 vs Random 2": {
+            "wins": 2,
+            "losses": 0,
+            "draws": 20,
             "penta_WW": 0,
-            "penta_WD": 0,
+            "penta_WD": 2,
             "penta_WL": 0,
-            "penta_DD": 0,
+            "penta_DD": 9,
             "penta_LD": 0,
-            "penta_LL": 2
+            "penta_LL": 0
         }
     }
 }
